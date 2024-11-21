@@ -1,0 +1,27 @@
+<div style="text-align: center; margin-top: 20px">
+  <h2>Mini Word</h2>
+
+  <p
+    [ngStyle]="{
+      color: textColor,
+      'font-size.px': fontSize,
+      'font-family': fontFamily
+    }"
+    style="margin-top: 20px"
+  >
+  <b>Ceci est un paragraphe modifiable avec Angular.</b>
+  </p>
+
+  <label for="color">Couleur : </label>
+  <p-colorPicker [(ngModel)]="textColor" />
+
+  <label for="size">Taille (px) : </label>
+  <input type="number" id="size" min="10" max="100" [(ngModel)]="fontSize" />
+
+  <label for="font">Police : </label>
+  <select id="font" [(ngModel)]="fontFamily">
+    <option *ngFor="let font of fonts" [value]="font">
+      {{ font }}
+    </option>
+  </select>
+</div>
