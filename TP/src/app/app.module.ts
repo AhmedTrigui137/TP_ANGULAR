@@ -14,6 +14,7 @@ import { ListeComponent } from './EX3/cv/liste/liste.component';
 import { ItemComponent } from './EX3/cv/liste/item/item.component';
 import { DetailComponent } from './EX3/cv/detail/detail.component';
 import { ColorComponent } from 'src/EX1/color/color.component';
+import { MiniWordModule } from './EX4/mini-word.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ColorComponent } from 'src/EX1/color/color.component';
     AppComponent,ListeComponent,ItemComponent,DetailComponent, CartevisiteComponent,
     DirectiveDirective,
     ArcencielComponent,
-    ColorComponent
+    ColorComponent,
+    MiniWordModule
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { ColorComponent } from 'src/EX1/color/color.component';
     AppRoutingModule,
     MatButtonModule,
     BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
