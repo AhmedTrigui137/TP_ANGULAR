@@ -1,0 +1,18 @@
+.cv-container {
+    display: flex; /* Flexbox layout */
+    height: 100vh;
+  }
+  
+  app-liste {
+    flex: 1; /* List takes up half of the space */
+    border-right: 1px solid #ccc; /* Border between list and detail */
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  app-detail {
+    flex: 1; /* Detail takes up the other half */
+    padding: 20px;
+    overflow-y: auto;
+  }
+  

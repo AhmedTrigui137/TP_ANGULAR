@@ -1,0 +1,21 @@
+<div *ngIf="item" class="detail-content">
+  <!-- Display Image or Default Image -->
+  <img 
+    [src]="item.image || 'assets/default-avatar.png'" 
+    alt="{{ item.firstName }} {{ item.lastName }}" 
+    class="detail-image" 
+  />
+
+  <div class="detail-details">
+    <!-- Display Full Name -->
+    <h2 class="detail-name">{{ item.firstName }} {{ item.lastName }}</h2>
+    <!-- Display Age and Job -->
+    <p class="detail-info"><strong>Age:</strong> {{ item.age }}</p>
+    <p class="detail-info"><strong>Job:</strong> {{ item.job }}</p>
+    <p class="detail-info"><strong>CIN:</strong> {{ item.cin }}</p>
+  </div>
+</div>
+
+<p *ngIf="!item" class="no-selection">
+  No item selected. Please select an item from the list.
+</p>

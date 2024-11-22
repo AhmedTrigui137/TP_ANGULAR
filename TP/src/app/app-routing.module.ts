@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-const routes: Routes = [];
+import { CvComponent } from './EX3/cv/cv.component';
+
+
+const routes: Routes = [
+  { path: 'cv', component: CvComponent }, 
+  { path: '', redirectTo: '', pathMatch: 'full' }, 
+  { path: '**', redirectTo: '/cv' } 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

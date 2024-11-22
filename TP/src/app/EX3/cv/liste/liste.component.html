@@ -1,0 +1,10 @@
+<div class="item-list">
+    <div
+      class="item-container"
+      *ngFor="let item of items"
+      (click)="onItemClicked(item)"
+    >
+      <app-item [item]="item"></app-item>
+    </div>
+  </div>
+  

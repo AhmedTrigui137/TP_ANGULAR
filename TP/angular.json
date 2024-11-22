@@ -26,6 +26,7 @@
             ],
             "styles": [
               "src/bootstrap.css",
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
               "src/rotating-card.css"
             ],
@@ -89,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
