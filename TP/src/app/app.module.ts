@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DirectiveDirective } from './EX5/directive.directive';
+import { ArcencielComponent } from './EX5/arcenciel/arcenciel.component';
 
 import { FormsModule } from '@angular/forms';
 import { CartevisiteComponent } from './cartevisite/cartevisite.component';import { CvComponent } from './EX3/cv/cv.component';
@@ -16,7 +17,9 @@ import { DetailComponent } from './EX3/cv/detail/detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent,ListeComponent,ItemComponent,DetailComponent, CartevisiteComponent
+    AppComponent,ListeComponent,ItemComponent,DetailComponent, CartevisiteComponent,
+    DirectiveDirective,
+    ArcencielComponent
   ],
   imports: [
     BrowserModule,
