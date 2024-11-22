@@ -16,12 +16,15 @@ import { DetailComponent } from './EX3/cv/detail/detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,ListeComponent,ItemComponent,DetailComponent, CartevisiteComponent
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
