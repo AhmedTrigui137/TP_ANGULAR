@@ -13,13 +13,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { ListeComponent } from './EX3/cv/liste/liste.component';
 import { ItemComponent } from './EX3/cv/liste/item/item.component';
 import { DetailComponent } from './EX3/cv/detail/detail.component';
+import { ColorComponent } from 'src/EX1/color/color.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,ListeComponent,ItemComponent,DetailComponent, CartevisiteComponent,
     DirectiveDirective,
-    ArcencielComponent
+    ArcencielComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +29,10 @@ import { DetailComponent } from './EX3/cv/detail/detail.component';
     AppRoutingModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
+
 export class AppModule { }
