@@ -1,21 +1,22 @@
 .item-list {
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    gap: 10px; /* Space between items */
-    padding: 20px;
+    flex-direction: column;
+    gap: 10px; /* Adds space between items */
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the list on the page */
   }
   
   .item-container {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #ccc; /* Creates the border around each item */
+    border-radius: 8px; /* Optional: makes the corners rounded */
+    padding: 15px; /* Adds spacing inside the border */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+    background-color: #f9f9f9; /* Optional: light background color */
+    transition: transform 0.2s; /* Adds a slight hover effect */
   }
   
   .item-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02); /* Enlarges slightly on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
   }
   
