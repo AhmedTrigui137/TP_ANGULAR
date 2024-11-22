@@ -1,0 +1,11 @@
+<div>
+    <h1>Color Changer</h1>
+  
+    <input type="text" #colorInput  placeholder="Enter a color" (change)="changeColor(colorInput.value)">
+    
+    <button (click)="resetColor()">Reset Color</button>
+  
+    <div [style.backgroundColor]="color" style="width: 200px; height: 200px; margin-top: 10px;">
+      This is the color box!
+    </div>
+  </div>

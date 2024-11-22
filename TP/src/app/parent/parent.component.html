@@ -1,1 +1,12 @@
-<p>parent works!</p>
+
+  <div [style.background-color]="backgroundColor" style="padding: 20px;">
+    <h3>Parent Works !</h3>
+    <p>Couleur actuelle du background : {{ backgroundColor }}</p>
+  
+    <!-- Appel du composant enfant -->
+    <app-child 
+      [parentColor]="backgroundColor" 
+      (colorChange)="updateBackgroundColor($event)">
+    </app-child>
+  </div>
+  

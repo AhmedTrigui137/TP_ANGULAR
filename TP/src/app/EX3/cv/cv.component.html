@@ -1,14 +1,4 @@
-<mat-toolbar color="primary">
-    <span>CV Tech</span>
-    <span class="spacer"></span>
-    <button mat-button>Login</button>
-    <button mat-button>Home</button>
-    <button mat-button routerLink="/cv" routerLinkActive="active">CV</button>
-    <button mat-button>Color</button>
-    <button mat-button>Task manager</button>
-    <button mat-button>Poc Add Students</button>
-    <button mat-button>Login</button>
-  </mat-toolbar>
+
   <div class="cv-container">
     <app-liste (itemSelected)="onItemSelected($event)"></app-liste>
     <app-detail [item]="selectedItem"></app-detail>

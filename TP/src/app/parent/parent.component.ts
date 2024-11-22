@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
+  backgroundColor: string = 'blue'; 
 
+  updateBackgroundColor(newColor: string) {
+    this.backgroundColor = newColor;
+  }
 }
