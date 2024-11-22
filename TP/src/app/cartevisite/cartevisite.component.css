@@ -1,0 +1,28 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each form group */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+  }
+  
+  label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;  /* Make label text bold */
+  }
+  
+  input, textarea {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%; /* Make inputs take full width of the container */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resize */
+    min-height: 100px; /* Set a minimum height for textareas */
+  }
+  

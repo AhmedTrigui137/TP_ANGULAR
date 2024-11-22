@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/bootstrap.css",
+              "src/styles.css",
+              "src/rotating-card.css"
             ],
             "scripts": []
           },
