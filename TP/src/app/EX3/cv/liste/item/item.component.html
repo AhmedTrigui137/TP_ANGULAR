@@ -1,0 +1,13 @@
+<div class="item-content">
+    <!-- Display image or use a placeholder if no image is available -->
+    <img [src]="item.image || 'assets/default-avatar.png'" alt="{{ item.firstName }} {{ item.lastName }}" class="item-image" />
+    
+    <div class="item-details">
+      <!-- Display full name (firstName + lastName) -->
+      <h3>{{ item.firstName }} {{ item.lastName }}</h3>
+      <!-- Display age and job -->
+      <p>Age: {{ item.age }} | Job: {{ item.job }}</p>
+      <p>Click to view details</p>
+    </div>
+  </div>
+  

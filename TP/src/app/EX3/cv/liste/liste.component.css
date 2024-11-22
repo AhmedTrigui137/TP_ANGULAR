@@ -1,0 +1,21 @@
+.item-list {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 10px; /* Space between items */
+    padding: 20px;
+  }
+  
+  .item-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .item-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
