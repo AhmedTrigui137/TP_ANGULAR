@@ -10,6 +10,8 @@ import { ImagenomComponent } from './imagenom/imagenom.component';
 import { EmbaucheComponent } from './EX3/cv/embauche/embauche.component';
 import { DetailComponent } from './detail/detail.component';
 
+import { LoginComponent } from './authentication/login/login.component';
+
 
 const routes: Routes = [
   
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent },
   { path: 'image', component: ImagenomComponent },
   { path: 'detail', component: DetailComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', redirectTo: '', pathMatch: 'full' }, 
   { path: '**', redirectTo: 'cv' },
   

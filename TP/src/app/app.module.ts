@@ -34,6 +34,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { ImageComponent } from './image/image.component';
+
 
 
 @NgModule({
@@ -52,7 +55,10 @@ import { DetailComponent } from './detail/detail.component';
     DefaultImagePipe,
     ImagenomComponent,
     EmbaucheComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent,
+    ImageComponent,
+
   ],
   imports: [
     BrowserModule,

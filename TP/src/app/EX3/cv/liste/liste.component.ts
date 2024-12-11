@@ -9,7 +9,7 @@ import { CvService } from 'src/app/services/cv.service';
 export class ListeComponent implements OnInit {
 
   ngOnInit(): void {
-    this.onGetItems();
+   this.onGetItems();
   }
   onGetItems(){
     this.cvService.getCv().subscribe({
