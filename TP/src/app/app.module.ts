@@ -10,7 +10,7 @@ import { CartevisiteComponent } from './cartevisite/cartevisite.component';
 import { CvComponent } from './EX3/cv/cv.component';
 import { ListeComponent } from './EX3/cv/liste/liste.component';
 import { ItemComponent } from './EX3/cv/liste/item/item.component';
-import { DetailComponent } from './EX3/cv/detail/detail.component';
+
 import { ColorComponent } from './EX1/color/color.component';
 
 // Modules
@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 // Third-party Modules
 import { ColorPickerModule } from 'primeng/colorpicker';
@@ -28,6 +29,12 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './fils/fils.component';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { ImagenomComponent } from './imagenom/imagenom.component';
+import { EmbaucheComponent } from './EX3/cv/embauche/embauche.component';
+import { ToastrModule } from 'ngx-toastr';
+import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailComponent } from './detail/detail.component';
+
 
 @NgModule({
   declarations: [
@@ -43,17 +50,26 @@ import { ImagenomComponent } from './imagenom/imagenom.component';
     ParentComponent,
     ChildComponent,
     DefaultImagePipe,
-    ImagenomComponent
+    ImagenomComponent,
+    EmbaucheComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
+    HttpClientModule,
     MatButtonModule,
     BrowserAnimationsModule,
     ColorPickerModule,
     FormsModule,
     MiniWordModule,
+    MatCardModule,
+    ToastrModule.forRoot({
+      timeOut: 3000, 
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

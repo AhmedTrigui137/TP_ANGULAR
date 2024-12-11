@@ -1,0 +1,8 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures the toolbar stays on top */
+  }
+  

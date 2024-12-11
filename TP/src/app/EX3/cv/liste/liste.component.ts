@@ -1,55 +1,31 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, inject, OnInit, Output } from '@angular/core';
+import { CvService } from 'src/app/services/cv.service';
 
 @Component({
   selector: 'app-liste',
   templateUrl: './liste.component.html',
   styleUrls: ['./liste.component.css']
 })
-export class ListeComponent {
+export class ListeComponent implements OnInit {
+
+  ngOnInit(): void {
+    this.onGetItems();
+  }
+  onGetItems(){
+    this.cvService.getCv().subscribe({
+      next:(res)=>{
+        console.log(res);
+        this.items=res;
+      },
+      error:(err)=>{
+        console.log('items error:'+err);
+      }
+    })
+  }
   @Output() itemSelected: EventEmitter<any> = new EventEmitter(); 
+  cvService=inject(CvService)
 
-  items=[{
-    id:1,
-    firstName:'jihed',
-    lastName:'ben amara',
-    image:'../../../assets/jihed.jpg',
-    age:22,
-    cin:14424644,
-    job:'Student'
-  },
-  {
-    id:2,
-    firstName:'ahmed',
-    lastName:'trigui',
-    image:'../../../assets/ahmed.jpg',
-    age:22,
-    cin:14424645,
-    job:'Student'},
-    {
-      id:3,
-      firstName:'houaida',
-      lastName:'mangour',
-      image:'../../../assets/houaida.jpg',
-      age:22,
-      cin:14424646,
-      job:'Student'},
-      {
-        id:1,
-        firstName:'rahma',
-        lastName:'heni',
-        image:'../../../assets/rahma.jpg',
-        age:22,
-        cin:14424647,
-        job:'Student'},
-        {
-          id:1,
-          firstName:'anas',
-          lastName:'bader',
-          image:'../../../assets/anas.jpg',
-          age:22,
-          cin:14424648,
-          job:'Student'} ];
-
+  items:any[]=[];
   onItemClicked(item: any) {
     this.itemSelected.emit(item); // Emits the selected item to parent
   }

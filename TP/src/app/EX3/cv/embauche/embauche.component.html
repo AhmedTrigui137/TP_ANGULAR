@@ -1,0 +1,13 @@
+<div class="embauched-list">
+    <mat-card *ngFor="let person of embauched" class="embauched-card">
+      <img mat-card-image [src]="person.image" alt="{{ person.firstName }} {{ person.lastName }}" />
+      <mat-card-header>
+        <mat-card-title>{{ person.firstName }} {{ person.lastName }}</mat-card-title>
+        <mat-card-subtitle>{{ person.job }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Age: {{ person.age }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

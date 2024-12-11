@@ -1,7 +1,9 @@
 
-  <div class="cv-container">
+  <div class="cv-container" [ngStyle]="{
+    'backgroundColor':color
+  }">
     <app-liste (itemSelected)="onItemSelected($event)"></app-liste>
-    <app-detail [item]="selectedItem"></app-detail>
+    <app-detail ></app-detail>
   </div>
   
   

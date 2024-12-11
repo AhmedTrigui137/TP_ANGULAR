@@ -1,4 +1,4 @@
-<div class="item-content">
+<div class="item-content" >
     <!-- Display image or use a placeholder if no image is available -->
     <img [src]="item.image || 'assets/default-avatar.png'" alt="{{ item.firstName }} {{ item.lastName }}" class="item-image" />
     
@@ -9,5 +9,7 @@
       <p>Age: {{ item.age }} | Job: {{ item.job }}</p>
       <p>Click to view details</p>
     </div>
+    <button class="btn btn-primary" (click)="embauche(item)">embaucher</button>
+    <button class="btn btn-primary" (click)="afficherDetails(item)">Afficher details</button>
   </div>
   

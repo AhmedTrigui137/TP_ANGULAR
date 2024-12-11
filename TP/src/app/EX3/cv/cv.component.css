@@ -1,18 +1,13 @@
 .cv-container {
-    display: flex; /* Flexbox layout */
-    height: 100vh;
-  }
-  
-  app-liste {
-    flex: 1; /* List takes up half of the space */
-    border-right: 1px solid #ccc; /* Border between list and detail */
-    padding: 20px;
-    overflow-y: auto;
-  }
-  
-  app-detail {
-    flex: 1; /* Detail takes up the other half */
-    padding: 20px;
-    overflow-y: auto;
-  }
-  
+  display: flex;
+  flex-direction: row; /* Ensures child components are side by side */
+  justify-content: space-between;
+  height: 100%; /* Full height of the parent */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+app-liste, app-detail {
+  flex: 1; /* Ensure both components take equal width */
+  overflow-y: auto; /* Allow scrolling within the components if necessary */
+  padding: 1rem; /* Add some spacing */
+}
