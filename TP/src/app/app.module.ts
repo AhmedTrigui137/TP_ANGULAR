@@ -36,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { ImageComponent } from './image/image.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -58,6 +59,7 @@ import { ImageComponent } from './image/image.component';
     HeaderComponent,
     LoginComponent,
     ImageComponent,
+    HomeComponent,
 
   ],
   imports: [

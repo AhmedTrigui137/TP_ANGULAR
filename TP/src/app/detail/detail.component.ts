@@ -1,5 +1,6 @@
 import { AfterContentChecked, Component, inject, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { CvService } from '../services/cv.service';
+import { Cv } from '../EX3/cv/cv';
 
 @Component({
   selector: 'app-detail',
@@ -16,6 +17,6 @@ constructor(){}
   }
   
 cvService=inject(CvService);
- item:any;
+ item?:Cv;
 
 }

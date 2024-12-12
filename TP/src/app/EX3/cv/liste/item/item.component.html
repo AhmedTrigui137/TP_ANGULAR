@@ -1,12 +1,12 @@
 <div class="item-content">
   <!-- Display image or use a placeholder if no image is available -->
-  <img [src]="'../../../../../assets/user.jpg'" alt="{{ item.firstName }} {{ item.lastName }}" class="item-image" />
+  <img [src]="'../../../../../assets/user.jpg'" alt="{{ item?.firstname }} {{ item?.name }}" class="item-image" />
   
   <div class="item-details">
     <!-- Display full name (firstName + lastName) -->
-    <h3>{{ item.firstname }} {{ item.name }}</h3>
+    <h3>{{ item?.firstname }} {{ item?.name }}</h3>
     <!-- Display age and job -->
-    <p>Age: {{ item.age }} | Job: {{ item.job }}</p>
+    <p>Age: {{ item?.age }} | Job: {{ item?.job }}</p>
 
   </div>
 

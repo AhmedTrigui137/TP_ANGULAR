@@ -21,16 +21,16 @@ export class LoginComponent {
 cvService=inject(CvService);
 router=inject(Router);
 tstr=inject(ToastrService) 
-onGetItems(){
-  this.cvService.getCv().subscribe({
-    next:(res)=>{
-      this.users=res;
-    },
-    error:(err)=>{
-      console.log(err);
-    }
-  })
-}
+// onGetUsers(){
+//   this.cvService.getCvs().subscribe({
+//     next:(res)=>{
+//       this.users=res;
+//     },
+//     error:(err)=>{
+//       console.log(err);
+//     }
+//   })
+// }
 onSubmit(form:NgForm) {
  
  if (form.valid){

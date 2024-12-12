@@ -3,6 +3,7 @@ import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { EmbaucheService } from 'src/app/services/embauche.service';
 import { Router } from '@angular/router';
+import { Cv } from '../../cv';
 
 @Component({
   selector: 'app-item',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class ItemComponent {
 
-  @Input() item: any; 
+  @Input() item?:Cv; 
   embaucheService=inject(EmbaucheService);
   CvService=inject(CvService);
   tstr=inject(ToastrService)
@@ -29,7 +30,7 @@ export class ItemComponent {
     this.embaucheService.embauches.push(item);
     this.tstr.success('Employee added successfully','Success');}
     }
-    afficherDetails(item:any) {
+    afficherDetails(item?:Cv) {
       this.CvService.selectedItem=item;
       this.router.navigate(['detail']);
        
